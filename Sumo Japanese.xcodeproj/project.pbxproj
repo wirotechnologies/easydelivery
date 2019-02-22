@@ -59,6 +59,7 @@
 		88DD205421FFCA35000F9F71 /* ItemCartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD205221FFCA35000F9F71 /* ItemCartViewCell.swift */; };
 		88DD205521FFCA35000F9F71 /* ItemCartViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DD205321FFCA35000F9F71 /* ItemCartViewCell.xib */; };
 		88E1177F220CB4C5002A7595 /* containerImageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E1177E220CB4C5002A7595 /* containerImageCard.swift */; };
+		88EBB12B221F82B300F22C4B /* MakeOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBB12A221F82B300F22C4B /* MakeOrderViewController.swift */; };
 		88EBF0B6221476AD00F85717 /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBF0B5221476AD00F85717 /* RestaurantDetailsViewController.swift */; };
 		88EBF0B922149A1A00F85717 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBF0B722149A1A00F85717 /* ScheduleTableViewCell.swift */; };
 		88EBF0BA22149A1A00F85717 /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88EBF0B822149A1A00F85717 /* ScheduleTableViewCell.xib */; };
@@ -162,6 +163,7 @@
 		88DD205221FFCA35000F9F71 /* ItemCartViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCartViewCell.swift; sourceTree = "<group>"; };
 		88DD205321FFCA35000F9F71 /* ItemCartViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCartViewCell.xib; sourceTree = "<group>"; };
 		88E1177E220CB4C5002A7595 /* containerImageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = containerImageCard.swift; sourceTree = "<group>"; };
+		88EBB12A221F82B300F22C4B /* MakeOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOrderViewController.swift; sourceTree = "<group>"; };
 		88EBF0B5221476AD00F85717 /* RestaurantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewController.swift; sourceTree = "<group>"; };
 		88EBF0B722149A1A00F85717 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		88EBF0B822149A1A00F85717 /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
@@ -369,6 +371,14 @@
 			path = Remove;
 			sourceTree = "<group>";
 		};
+		88EBB129221F826A00F22C4B /* MakeOrder */ = {
+			isa = PBXGroup;
+			children = (
+				88EBB12A221F82B300F22C4B /* MakeOrderViewController.swift */,
+			);
+			path = MakeOrder;
+			sourceTree = "<group>";
+		};
 		88EBF0B42214767A00F85717 /* RestaurantDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,6 +471,7 @@
 		ACCCEE2521C8D7200009B5A4 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				88EBB129221F826A00F22C4B /* MakeOrder */,
 				88B8DEC0221B512B009ACB2E /* PrivacyPolicy */,
 				88B8DEB9221B1567009ACB2E /* Options */,
 				88EBF0BB2214AF8700F85717 /* NearestLocation */,
@@ -708,6 +719,7 @@
 				889BC41E2209F52E0081ED34 /* AddCreditCardViewController.swift in Sources */,
 				8859446D22178559001D2A10 /* datePicker_UIView.swift in Sources */,
 				8883DE5922034438009239B5 /* CheckoutItem.swift in Sources */,
+				88EBB12B221F82B300F22C4B /* MakeOrderViewController.swift in Sources */,
 				88DD205021FF90C3000F9F71 /* RemoveViewCell.swift in Sources */,
 				88A87BE021FB65C90044D51C /* AdditionViewCellContent.swift in Sources */,
 				880D49F0220B913900090725 /* rounded_UIView_nearest.swift in Sources */,
