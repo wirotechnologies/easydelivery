@@ -64,6 +64,8 @@
 		88E2C1192220541A00B6EB25 /* PlacesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E2C1172220541A00B6EB25 /* PlacesTableViewCell.xib */; };
 		88E2C11C2220714E00B6EB25 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E2C11A2220714E00B6EB25 /* ItemTableViewCell.swift */; };
 		88E2C11D2220714E00B6EB25 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E2C11B2220714E00B6EB25 /* ItemTableViewCell.xib */; };
+		88E2C1202220A6E800B6EB25 /* ImageAndTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E2C11E2220A6E800B6EB25 /* ImageAndTextTableViewCell.swift */; };
+		88E2C1212220A6E800B6EB25 /* ImageAndTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E2C11F2220A6E800B6EB25 /* ImageAndTextTableViewCell.xib */; };
 		88EBB12B221F82B300F22C4B /* MakeOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBB12A221F82B300F22C4B /* MakeOrderViewController.swift */; };
 		88EBF0B6221476AD00F85717 /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBF0B5221476AD00F85717 /* RestaurantDetailsViewController.swift */; };
 		88EBF0B922149A1A00F85717 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBF0B722149A1A00F85717 /* ScheduleTableViewCell.swift */; };
@@ -173,6 +175,8 @@
 		88E2C1172220541A00B6EB25 /* PlacesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesTableViewCell.xib; sourceTree = "<group>"; };
 		88E2C11A2220714E00B6EB25 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		88E2C11B2220714E00B6EB25 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		88E2C11E2220A6E800B6EB25 /* ImageAndTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndTextTableViewCell.swift; sourceTree = "<group>"; };
+		88E2C11F2220A6E800B6EB25 /* ImageAndTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageAndTextTableViewCell.xib; sourceTree = "<group>"; };
 		88EBB12A221F82B300F22C4B /* MakeOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOrderViewController.swift; sourceTree = "<group>"; };
 		88EBF0B5221476AD00F85717 /* RestaurantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewController.swift; sourceTree = "<group>"; };
 		88EBF0B722149A1A00F85717 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
@@ -522,6 +526,8 @@
 			isa = PBXGroup;
 			children = (
 				ACCCEE1921C8C2B60009B5A4 /* HomeViewController.swift */,
+				88E2C11E2220A6E800B6EB25 /* ImageAndTextTableViewCell.swift */,
+				88E2C11F2220A6E800B6EB25 /* ImageAndTextTableViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -687,6 +693,7 @@
 				8869A43C220DE18C00817350 /* OrderInstructionsTableViewCell.xib in Resources */,
 				88DD205521FFCA35000F9F71 /* ItemCartViewCell.xib in Resources */,
 				88A87BE121FB65C90044D51C /* AdditionViewCellContent.xib in Resources */,
+				88E2C1212220A6E800B6EB25 /* ImageAndTextTableViewCell.xib in Resources */,
 				88B8DECA221B51C0009ACB2E /* ContentPrivacyTableViewCell.xib in Resources */,
 				8869A438220DE16F00817350 /* OrderOwnerTableViewCell.xib in Resources */,
 				88EBF0C12214C13000F85717 /* NearestTableViewCell.xib in Resources */,
@@ -755,6 +762,7 @@
 				8869A42D220DC57400817350 /* dotLineUIView.swift in Sources */,
 				88E1177F220CB4C5002A7595 /* containerImageCard.swift in Sources */,
 				8869A433220DE11D00817350 /* CutleryTableViewCell.swift in Sources */,
+				88E2C1202220A6E800B6EB25 /* ImageAndTextTableViewCell.swift in Sources */,
 				88C25F3E220BB4DC004E396C /* testViewController.swift in Sources */,
 				88EBF0C32214C1C600F85717 /* circleUIView.swift in Sources */,
 				AC30D5A621D4BB3F00E4330C /* Network.swift in Sources */,

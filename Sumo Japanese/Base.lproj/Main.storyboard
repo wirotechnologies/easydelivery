@@ -865,6 +865,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tb6-tC-tOq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="470"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gSK-Ag-ujL" id="07Y-hD-v79"/>
+                                    <outlet property="delegate" destination="gSK-Ag-ujL" id="guS-Ql-Lki"/>
+                                </connections>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="UQK-Fe-BSQ">
                                 <rect key="frame" x="169" y="258.5" width="37" height="37"/>
@@ -890,6 +894,9 @@
                                                         <integer key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="deliveryActionBtn:" destination="gSK-Ag-ujL" eventType="touchUpInside" id="apK-LN-XLZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khu-Ql-8fk" customClass="roundedButton" customModule="Sumo_Japanese" customModuleProvider="target">
                                                 <rect key="frame" x="177.5" y="0.0" width="157.5" height="44"/>
@@ -905,6 +912,9 @@
                                                         <integer key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pickupActionBtn:" destination="gSK-Ag-ujL" eventType="touchUpInside" id="3ZU-r6-6jh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -935,7 +945,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="68Z-Dt-goW"/>
                     <connections>
+                        <outlet property="deliveryOutletButton" destination="Srf-RC-vHZ" id="72A-rj-mpY"/>
                         <outlet property="loadingAnimated" destination="UQK-Fe-BSQ" id="n8q-5n-Frp"/>
+                        <outlet property="pickupOutletButton" destination="khu-Ql-8fk" id="U4H-Yf-Npn"/>
+                        <outlet property="tableHome" destination="Tb6-tC-tOq" id="iCm-Bc-5bP"/>
                         <segue destination="qjf-rj-NXU" kind="show" identifier="segueToLoginFromHome" id="fVr-Un-YH2"/>
                         <segue destination="9b1-Ix-b7M" kind="show" identifier="segueFromHomeToRestaurantDetail" id="akc-O7-tsU"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="segueToCategoryFromHome" id="hNQ-zS-qDA"/>

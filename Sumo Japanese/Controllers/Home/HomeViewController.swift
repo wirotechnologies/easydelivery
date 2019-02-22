@@ -8,20 +8,29 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+struct PromoStyle1 {
+    var image = String()
+    var title = String()
+    var price = String()
+    var item = String()
+}
+
+class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var menu: [Dictionary<String, Any>] = [[:]]
     var state_loading: Bool = true
-    
+    var promosHome = [PromoStyle1]()
 
+    @IBOutlet weak var tableHome: UITableView!
     @IBOutlet weak var deliveryOutletButton: roundedButton!
     @IBOutlet weak var pickupOutletButton: roundedButton!
     
     @IBOutlet weak var loadingAnimated: UIActivityIndicatorView!
-    @IBAction func deliveryBtn(_ sender: Any) {
+    
+    @IBAction func deliveryActionBtn(_ sender: Any) {
         createAlert(title: "Welcome", message: "Do you want to log in or continue as a guest?")
     }
-    @IBAction func pickupBtn(_ sender: Any) {
+    @IBAction func pickupActionBtn(_ sender: Any) {
         createAlert(title: "Welcome", message: "Do you want to log in or continue as a guest?")
     }
     
@@ -34,6 +43,14 @@ class HomeViewController: UIViewController {
         if let items = tabBarController?.tabBar.items {
             items[1].isEnabled = false
         }
+        promosHome = [
+            PromoStyle1(image: "img_karens", title: "Karen's Pizza", price: "$3.00 Delivery", item: "10 - 20 min | Pizza"),
+            PromoStyle1(image: "img_sumo", title: "Sumo Japanese Restaurant", price: "Free Delivery", item: "20 - 30 min | Japanese Food"),
+            PromoStyle1(image: "img_subway", title: "Subway", price: "$1.00 Delivery", item: "56 - 60 min | Sandwish")
+        ]
+        
+        let nibCell = UINib(nibName: "ImageAndTextTableViewCell", bundle: nil)
+        tableHome.register(nibCell, forCellReuseIdentifier: "_imageAndTextTableViewCell")
     }
     
     func createAlert(title: String, message: String){
@@ -47,6 +64,25 @@ class HomeViewController: UIViewController {
             alert.dismiss(animated: true, completion: nil)
         }))
         self.present(alert, animated: true, completion: nil)
+    }
+ 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return promosHome.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "_imageAndTextTableViewCell") as? ImageAndTextTableViewCell
+        cell?.setTitle(title: promosHome[indexPath.row].title)
+        cell?.setImage(imageName: promosHome[indexPath.row].image)
+        cell?.setTime(time: promosHome[indexPath.row].item)
+        cell?.setPrice(price: promosHome[indexPath.row].price)
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 1 {
+            performSegue(withIdentifier: "segueToCategoryFromHome", sender: nil)
+        }
     }
     
     func initApp()
