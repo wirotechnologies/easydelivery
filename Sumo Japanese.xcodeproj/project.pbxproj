@@ -59,6 +59,11 @@
 		88DD205421FFCA35000F9F71 /* ItemCartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD205221FFCA35000F9F71 /* ItemCartViewCell.swift */; };
 		88DD205521FFCA35000F9F71 /* ItemCartViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DD205321FFCA35000F9F71 /* ItemCartViewCell.xib */; };
 		88E1177F220CB4C5002A7595 /* containerImageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E1177E220CB4C5002A7595 /* containerImageCard.swift */; };
+		88E2C115222044A400B6EB25 /* InitialSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E2C114222044A400B6EB25 /* InitialSearchViewController.swift */; };
+		88E2C1182220541A00B6EB25 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E2C1162220541A00B6EB25 /* PlacesTableViewCell.swift */; };
+		88E2C1192220541A00B6EB25 /* PlacesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E2C1172220541A00B6EB25 /* PlacesTableViewCell.xib */; };
+		88E2C11C2220714E00B6EB25 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E2C11A2220714E00B6EB25 /* ItemTableViewCell.swift */; };
+		88E2C11D2220714E00B6EB25 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E2C11B2220714E00B6EB25 /* ItemTableViewCell.xib */; };
 		88EBB12B221F82B300F22C4B /* MakeOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBB12A221F82B300F22C4B /* MakeOrderViewController.swift */; };
 		88EBF0B6221476AD00F85717 /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBF0B5221476AD00F85717 /* RestaurantDetailsViewController.swift */; };
 		88EBF0B922149A1A00F85717 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBF0B722149A1A00F85717 /* ScheduleTableViewCell.swift */; };
@@ -163,6 +168,11 @@
 		88DD205221FFCA35000F9F71 /* ItemCartViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCartViewCell.swift; sourceTree = "<group>"; };
 		88DD205321FFCA35000F9F71 /* ItemCartViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCartViewCell.xib; sourceTree = "<group>"; };
 		88E1177E220CB4C5002A7595 /* containerImageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = containerImageCard.swift; sourceTree = "<group>"; };
+		88E2C114222044A400B6EB25 /* InitialSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSearchViewController.swift; sourceTree = "<group>"; };
+		88E2C1162220541A00B6EB25 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
+		88E2C1172220541A00B6EB25 /* PlacesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesTableViewCell.xib; sourceTree = "<group>"; };
+		88E2C11A2220714E00B6EB25 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		88E2C11B2220714E00B6EB25 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		88EBB12A221F82B300F22C4B /* MakeOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOrderViewController.swift; sourceTree = "<group>"; };
 		88EBF0B5221476AD00F85717 /* RestaurantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewController.swift; sourceTree = "<group>"; };
 		88EBF0B722149A1A00F85717 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
@@ -371,6 +381,18 @@
 			path = Remove;
 			sourceTree = "<group>";
 		};
+		88E2C1132220446E00B6EB25 /* InitialSearch */ = {
+			isa = PBXGroup;
+			children = (
+				88E2C114222044A400B6EB25 /* InitialSearchViewController.swift */,
+				88E2C1162220541A00B6EB25 /* PlacesTableViewCell.swift */,
+				88E2C1172220541A00B6EB25 /* PlacesTableViewCell.xib */,
+				88E2C11A2220714E00B6EB25 /* ItemTableViewCell.swift */,
+				88E2C11B2220714E00B6EB25 /* ItemTableViewCell.xib */,
+			);
+			path = InitialSearch;
+			sourceTree = "<group>";
+		};
 		88EBB129221F826A00F22C4B /* MakeOrder */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +493,7 @@
 		ACCCEE2521C8D7200009B5A4 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				88E2C1132220446E00B6EB25 /* InitialSearch */,
 				88EBB129221F826A00F22C4B /* MakeOrder */,
 				88B8DEC0221B512B009ACB2E /* PrivacyPolicy */,
 				88B8DEB9221B1567009ACB2E /* Options */,
@@ -660,6 +683,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E2C1192220541A00B6EB25 /* PlacesTableViewCell.xib in Resources */,
 				8869A43C220DE18C00817350 /* OrderInstructionsTableViewCell.xib in Resources */,
 				88DD205521FFCA35000F9F71 /* ItemCartViewCell.xib in Resources */,
 				88A87BE121FB65C90044D51C /* AdditionViewCellContent.xib in Resources */,
@@ -675,6 +699,7 @@
 				AC30D59A21D4666200E4330C /* CategoryViewCell.xib in Resources */,
 				88B8DEBF221B186B009ACB2E /* OptionsTableViewCell.xib in Resources */,
 				88DD204D21FF8C42000F9F71 /* RemoveViewCellContent.xib in Resources */,
+				88E2C11D2220714E00B6EB25 /* ItemTableViewCell.xib in Resources */,
 				88B57B2A21FA04F1005FAB75 /* AdditionViewCell.xib in Resources */,
 				ACEA9A0E21C5DAE800E08526 /* Main.storyboard in Resources */,
 				8883DE5D22035519009239B5 /* TitleTableViewCell.xib in Resources */,
@@ -719,11 +744,13 @@
 				889BC41E2209F52E0081ED34 /* AddCreditCardViewController.swift in Sources */,
 				8859446D22178559001D2A10 /* datePicker_UIView.swift in Sources */,
 				8883DE5922034438009239B5 /* CheckoutItem.swift in Sources */,
+				88E2C1182220541A00B6EB25 /* PlacesTableViewCell.swift in Sources */,
 				88EBB12B221F82B300F22C4B /* MakeOrderViewController.swift in Sources */,
 				88DD205021FF90C3000F9F71 /* RemoveViewCell.swift in Sources */,
 				88A87BE021FB65C90044D51C /* AdditionViewCellContent.swift in Sources */,
 				880D49F0220B913900090725 /* rounded_UIView_nearest.swift in Sources */,
 				880D49EE220B8CF600090725 /* LoginViewController.swift in Sources */,
+				88E2C11C2220714E00B6EB25 /* ItemTableViewCell.swift in Sources */,
 				88EBF0B922149A1A00F85717 /* ScheduleTableViewCell.swift in Sources */,
 				8869A42D220DC57400817350 /* dotLineUIView.swift in Sources */,
 				88E1177F220CB4C5002A7595 /* containerImageCard.swift in Sources */,
@@ -755,6 +782,7 @@
 				8817791F2213871E002AE5DF /* DaysCollectionViewCell.swift in Sources */,
 				889BC41B2209CE6A0081ED34 /* roundedButton.swift in Sources */,
 				881A90FF220A47940020D4A8 /* rounded_UIView_no_border.swift in Sources */,
+				88E2C115222044A400B6EB25 /* InitialSearchViewController.swift in Sources */,
 				ACCCEE1A21C8C2B60009B5A4 /* HomeViewController.swift in Sources */,
 				8869A445220E43D000817350 /* rounded_UIView_Gift_Card.swift in Sources */,
 				88B8DEC9221B51C0009ACB2E /* ContentPrivacyTableViewCell.swift in Sources */,

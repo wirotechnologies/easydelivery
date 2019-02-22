@@ -15,16 +15,16 @@ class HomeViewController: UIViewController {
     
 
     @IBOutlet weak var deliveryOutletButton: roundedButton!
+    @IBOutlet weak var pickupOutletButton: roundedButton!
     
     @IBOutlet weak var loadingAnimated: UIActivityIndicatorView!
-    @IBAction func locationButton(_ sender: Any) {
-        performSegue(withIdentifier: "segueFromHomeToRestaurantDetail", sender: nil)
-    }
-    
-    @IBAction func deliveryButton(_ sender: Any) {
+    @IBAction func deliveryBtn(_ sender: Any) {
         createAlert(title: "Welcome", message: "Do you want to log in or continue as a guest?")
     }
-
+    @IBAction func pickupBtn(_ sender: Any) {
+        createAlert(title: "Welcome", message: "Do you want to log in or continue as a guest?")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadingAnimated.startAnimating()
@@ -43,7 +43,7 @@ class HomeViewController: UIViewController {
             alert.dismiss(animated: true, completion: nil)
         }))
         alert.addAction(UIAlertAction(title: "Guest", style: UIAlertAction.Style.default, handler: {(action) in
-            self.performSegue(withIdentifier: "segueToCategoryFromHome", sender: nil)
+            self.performSegue(withIdentifier: "segueToInitialSearchFromHome", sender: nil)
             alert.dismiss(animated: true, completion: nil)
         }))
         self.present(alert, animated: true, completion: nil)
@@ -99,6 +99,8 @@ class HomeViewController: UIViewController {
                             items[1].isEnabled = true
                             self.deliveryOutletButton.isEnabled = true
                             self.deliveryOutletButton.backgroundColor = UIColor(red:0.78, green:0.07, blue:0.00, alpha:1.0)
+                            self.pickupOutletButton.isEnabled = true
+                            self.pickupOutletButton.backgroundColor = UIColor(red:0.78, green:0.07, blue:0.00, alpha:1.0)
                         }
                     }
                     

@@ -863,62 +863,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="htb-nC-atR">
-                                <rect key="frame" x="0.0" y="54.5" width="375" height="425"/>
+                                <rect key="frame" x="0.0" y="98.5" width="375" height="337"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faster_order_logo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PS2-dR-jvv">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="221"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0u-fN-Dv9" customClass="rounded_UIView_no_border" customModule="Sumo_Japanese" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="236" width="295" height="130"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q1q-J4-HeH">
-                                                <rect key="frame" x="27.5" y="13" width="240" height="104"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nearest Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfc-Tv-Z6r">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xga-uI-6yo">
-                                                        <rect key="frame" x="0.0" y="26" width="240" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <state key="normal" title=" Coral Spring" image="icon_nearest"/>
-                                                        <connections>
-                                                            <action selector="locationButton:" destination="gSK-Ag-ujL" eventType="touchUpInside" id="Vyi-aU-dzw"/>
-                                                        </connections>
-                                                    </button>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzm-lq-uno" customClass="rounded_UIView_nearest" customModule="Sumo_Japanese" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="70" width="240" height="34"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Wait (Party of 1-2)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rc-5D-NrM">
-                                                                <rect key="frame" x="20" y="0.0" width="200" height="34"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="9rc-5D-NrM" secondAttribute="trailing" constant="20" id="1Sv-VD-sBG"/>
-                                                            <constraint firstAttribute="height" constant="34" id="6Db-d6-4o5"/>
-                                                            <constraint firstItem="9rc-5D-NrM" firstAttribute="top" secondItem="dzm-lq-uno" secondAttribute="top" id="Gi1-OT-Fan"/>
-                                                            <constraint firstAttribute="bottom" secondItem="9rc-5D-NrM" secondAttribute="bottom" id="RCA-PM-uSG"/>
-                                                            <constraint firstItem="9rc-5D-NrM" firstAttribute="leading" secondItem="dzm-lq-uno" secondAttribute="leading" constant="20" id="maX-ES-rs1"/>
-                                                        </constraints>
-                                                    </view>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="130" id="2qK-FY-u1r"/>
-                                            <constraint firstItem="q1q-J4-HeH" firstAttribute="centerY" secondItem="w0u-fN-Dv9" secondAttribute="centerY" id="Dqi-xs-Yfx"/>
-                                            <constraint firstItem="q1q-J4-HeH" firstAttribute="centerX" secondItem="w0u-fN-Dv9" secondAttribute="centerX" id="Hou-Pv-CgB"/>
-                                        </constraints>
-                                    </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="BFo-aI-ha3">
-                                        <rect key="frame" x="40" y="381" width="295" height="44"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="BFo-aI-ha3">
+                                        <rect key="frame" x="40" y="236" width="295" height="101"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mum-xP-nKr" customClass="roundedButton" customModule="Sumo_Japanese" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="44"/>
@@ -926,7 +877,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="3w3-wi-3RB"/>
                                                 </constraints>
-                                                <state key="normal" title=" Make my Order" image="icon_delivery_menu">
+                                                <state key="normal" title="  Delivery" image="icon_delivery_menu">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -935,17 +886,33 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="deliveryButton:" destination="gSK-Ag-ujL" eventType="touchUpInside" id="LaJ-bJ-euo"/>
+                                                    <action selector="deliveryBtn:" destination="gSK-Ag-ujL" eventType="touchUpInside" id="mX2-za-N6R"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggc-2S-ZpM" customClass="roundedButton" customModule="Sumo_Japanese" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="57" width="295" height="44"/>
+                                                <color key="backgroundColor" red="0.7843137255" green="0.070588235289999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="lu1-Ml-n9z"/>
+                                                </constraints>
+                                                <state key="normal" title="  Pickup" image="icon_pickup_menu">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pickupBtn:" destination="gSK-Ag-ujL" eventType="touchUpInside" id="Djz-JA-owJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="w0u-fN-Dv9" firstAttribute="leading" secondItem="htb-nC-atR" secondAttribute="leading" constant="40" id="Jk4-Nb-xZx"/>
                                     <constraint firstItem="BFo-aI-ha3" firstAttribute="leading" secondItem="htb-nC-atR" secondAttribute="leading" constant="40" id="Np0-Sb-ZTf"/>
                                     <constraint firstItem="PS2-dR-jvv" firstAttribute="leading" secondItem="htb-nC-atR" secondAttribute="leading" id="jeg-gR-lF6"/>
-                                    <constraint firstAttribute="trailing" secondItem="w0u-fN-Dv9" secondAttribute="trailing" constant="40" id="o75-ef-GF8"/>
                                     <constraint firstAttribute="trailing" secondItem="PS2-dR-jvv" secondAttribute="trailing" id="qSp-wm-BQI"/>
                                     <constraint firstAttribute="trailing" secondItem="BFo-aI-ha3" secondAttribute="trailing" constant="40" id="tCt-6g-L0E"/>
                                 </constraints>
@@ -969,20 +936,21 @@
                     <connections>
                         <outlet property="deliveryOutletButton" destination="Mum-xP-nKr" id="SZy-CK-U6m"/>
                         <outlet property="loadingAnimated" destination="UQK-Fe-BSQ" id="n8q-5n-Frp"/>
+                        <outlet property="pickupOutletButton" destination="ggc-2S-ZpM" id="SHA-W0-4Ld"/>
                         <segue destination="qjf-rj-NXU" kind="show" identifier="segueToLoginFromHome" id="fVr-Un-YH2"/>
                         <segue destination="9b1-Ix-b7M" kind="show" identifier="segueFromHomeToRestaurantDetail" id="akc-O7-tsU"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="segueToCategoryFromHome" id="hNQ-zS-qDA"/>
-                        <segue destination="9h8-V1-4Pa" kind="show" id="pYd-nE-bCf"/>
+                        <segue destination="9h8-V1-4Pa" kind="show" identifier="segueToInitialSearchFromHome" id="gKV-3Q-yF1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OlR-Xo-trp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1074.4000000000001" y="947.67616191904051"/>
         </scene>
-        <!--Make Order View Controller-->
+        <!--Initial Search View Controller-->
         <scene sceneID="6GE-t6-N1Z">
             <objects>
-                <viewController id="9h8-V1-4Pa" customClass="MakeOrderViewController" customModule="Sumo_Japanese" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9h8-V1-4Pa" customClass="InitialSearchViewController" customModule="Sumo_Japanese" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fih-yC-9P6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1015,116 +983,71 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cuX-Dl-QZC">
-                                <rect key="frame" x="40" y="-73.5" width="295" height="701"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cuX-Dl-QZC">
+                                <rect key="frame" x="10" y="10" width="355" height="91"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_sumo_ally" translatesAutoresizingMaskIntoConstraints="NO" id="r48-bV-BiC">
-                                        <rect key="frame" x="0.0" y="0.0" width="295" height="323"/>
-                                    </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pickup Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-16-Q3c" customClass="rounded_textField" customModule="Sumo_Japanese" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="333" width="295" height="44"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fuP-wQ-nob">
+                                        <rect key="frame" x="10" y="0.0" width="335" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="Q8c-Cj-Ic1"/>
+                                            <constraint firstAttribute="height" constant="35" id="7qd-C8-Huv"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <segments>
+                                            <segment title="Places"/>
+                                            <segment title="Items"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.7843137255" green="0.070588235289999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="selectorPlaceOrItems:" destination="9h8-V1-4Pa" eventType="valueChanged" id="afS-6a-463"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" showsSearchResultsButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bR3-X0-q95">
+                                        <rect key="frame" x="0.0" y="35" width="355" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="VcC-NY-lzC"/>
+                                        </constraints>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="5fu-0Y-79K" id="T8f-dE-0Uv"/>
-                                        </connections>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zk7-tq-dEN" customClass="roundedButton" customModule="Sumo_Japanese" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="387" width="295" height="44"/>
-                                        <color key="backgroundColor" red="0.7843137255" green="0.070588235289999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="CC4-CZ-Hxg"/>
-                                        </constraints>
-                                        <state key="normal" title="Chose from menu">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="deliveryButton:" destination="gSK-Ag-ujL" eventType="touchUpInside" id="fCZ-ef-8dB"/>
-                                        </connections>
-                                    </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Delivery Person Name (Optional)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dbE-hz-sHc" customClass="rounded_textField" customModule="Sumo_Japanese" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="441" width="295" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="aQv-aY-Fsd"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="5fu-0Y-79K" id="HkZ-vP-pBH"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Delivery Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lly-Z3-jEm" customClass="rounded_textField" customModule="Sumo_Japanese" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="495" width="295" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="iEA-xS-OLL"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="5fu-0Y-79K" id="RQZ-aM-7Xn"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Person Receiving Name (Optional)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qWb-20-Ecl" customClass="rounded_textField" customModule="Sumo_Japanese" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="549" width="295" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="7qz-H7-Lnn"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="5fu-0Y-79K" id="fen-nY-vI8"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yze-TV-4ez" customClass="rounded_textField" customModule="Sumo_Japanese" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="603" width="295" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="7WB-k7-hgR"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="5fu-0Y-79K" id="l3d-gi-2jh"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BGW-Mq-SyJ" customClass="rounded_textField" customModule="Sumo_Japanese" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="657" width="295" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="V7n-Rd-4FY"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="5fu-0Y-79K" id="Dvt-35-jGg"/>
-                                        </connections>
-                                    </textField>
+                                        <scopeButtonTitles>
+                                            <string>Title</string>
+                                            <string>Title</string>
+                                        </scopeButtonTitles>
+                                    </searchBar>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="fuP-wQ-nob" firstAttribute="leading" secondItem="cuX-Dl-QZC" secondAttribute="leading" constant="10" id="OwE-0B-dNt"/>
+                                    <constraint firstItem="bR3-X0-q95" firstAttribute="leading" secondItem="cuX-Dl-QZC" secondAttribute="leading" id="Sgc-CM-EdH"/>
+                                    <constraint firstAttribute="trailing" secondItem="fuP-wQ-nob" secondAttribute="trailing" constant="10" id="tVH-kf-NxW"/>
+                                    <constraint firstAttribute="trailing" secondItem="bR3-X0-q95" secondAttribute="trailing" id="uNc-qJ-fdq"/>
+                                </constraints>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WON-Xr-ay3">
+                                <rect key="frame" x="0.0" y="111" width="375" height="345"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9h8-V1-4Pa" id="ggd-RT-qJK"/>
+                                    <outlet property="delegate" destination="9h8-V1-4Pa" id="aDT-cO-Wt5"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cuX-Dl-QZC" firstAttribute="leading" secondItem="rLZ-sU-It1" secondAttribute="leading" constant="40" id="LyI-6a-lE7"/>
-                            <constraint firstItem="cuX-Dl-QZC" firstAttribute="centerY" secondItem="fih-yC-9P6" secondAttribute="centerY" id="RuK-mm-61X"/>
+                            <constraint firstItem="WON-Xr-ay3" firstAttribute="leading" secondItem="rLZ-sU-It1" secondAttribute="leading" id="7E7-PC-ytw"/>
+                            <constraint firstItem="cuX-Dl-QZC" firstAttribute="leading" secondItem="rLZ-sU-It1" secondAttribute="leading" constant="10" id="LyI-6a-lE7"/>
+                            <constraint firstItem="rLZ-sU-It1" firstAttribute="trailing" secondItem="WON-Xr-ay3" secondAttribute="trailing" id="QY0-Br-qMD"/>
                             <constraint firstItem="rLZ-sU-It1" firstAttribute="bottom" secondItem="zdf-PJ-V4n" secondAttribute="bottom" id="VGi-Dx-6YK"/>
+                            <constraint firstItem="cuX-Dl-QZC" firstAttribute="top" secondItem="rLZ-sU-It1" secondAttribute="top" constant="10" id="VGo-AL-HQT"/>
                             <constraint firstItem="zdf-PJ-V4n" firstAttribute="trailing" secondItem="rLZ-sU-It1" secondAttribute="trailing" id="cT5-X7-OTa"/>
-                            <constraint firstItem="rLZ-sU-It1" firstAttribute="trailing" secondItem="cuX-Dl-QZC" secondAttribute="trailing" constant="40" id="lLJ-Nv-b5I"/>
+                            <constraint firstItem="WON-Xr-ay3" firstAttribute="top" secondItem="cuX-Dl-QZC" secondAttribute="bottom" constant="10" id="ijt-oq-CyR"/>
+                            <constraint firstItem="rLZ-sU-It1" firstAttribute="trailing" secondItem="cuX-Dl-QZC" secondAttribute="trailing" constant="10" id="lLJ-Nv-b5I"/>
+                            <constraint firstItem="zdf-PJ-V4n" firstAttribute="top" secondItem="WON-Xr-ay3" secondAttribute="bottom" constant="10" id="vMl-fV-Wz4"/>
                             <constraint firstItem="zdf-PJ-V4n" firstAttribute="leading" secondItem="rLZ-sU-It1" secondAttribute="leading" id="zmW-61-vxi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rLZ-sU-It1"/>
                     </view>
+                    <connections>
+                        <outlet property="selectorOutlet" destination="fuP-wQ-nob" id="Ia4-GU-fY8"/>
+                        <outlet property="tableSearch" destination="WON-Xr-ay3" id="8dk-ji-7Zb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dp-Zf-Syp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1358,7 +1281,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="Nin-qR-wem"/>
                                                 </constraints>
-                                                <state key="normal" title="Pickup">
+                                                <state key="normal" title="Login">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -4541,16 +4464,16 @@
         <image name="icon_more_new" width="27" height="27"/>
         <image name="icon_nearest" width="36" height="36"/>
         <image name="icon_options" width="23" height="23"/>
+        <image name="icon_pickup_menu" width="23" height="23"/>
         <image name="icon_secure" width="18" height="23"/>
-        <image name="img_sumo_ally" width="319" height="323"/>
         <image name="login_demo_header" width="417" height="249"/>
         <image name="logo_sumo_login" width="282" height="198"/>
         <image name="scan_card" width="102" height="46"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fLJ-d0-bZV"/>
+        <segue reference="q9u-SF-Act"/>
         <segue reference="akc-O7-tsU"/>
-        <segue reference="buo-Vh-j7x"/>
+        <segue reference="Tnq-Pk-PZa"/>
         <segue reference="fVr-Un-YH2"/>
         <segue reference="hNQ-zS-qDA"/>
         <segue reference="yo0-EV-M6U"/>
