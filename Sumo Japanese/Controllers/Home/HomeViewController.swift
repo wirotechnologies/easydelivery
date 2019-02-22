@@ -14,7 +14,6 @@ class HomeViewController: UIViewController {
     var state_loading: Bool = true
     
 
-    @IBOutlet weak var pickupOutletButton: roundedButton!
     @IBOutlet weak var deliveryOutletButton: roundedButton!
     
     @IBOutlet weak var loadingAnimated: UIActivityIndicatorView!
@@ -25,10 +24,7 @@ class HomeViewController: UIViewController {
     @IBAction func deliveryButton(_ sender: Any) {
         createAlert(title: "Welcome", message: "Do you want to log in or continue as a guest?")
     }
-    
-    @IBAction func pickupButton(_ sender: Any) {
-        createAlert(title: "Welcome", message: "Do you want to log in or continue as a guest?")
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         loadingAnimated.startAnimating()
@@ -101,10 +97,8 @@ class HomeViewController: UIViewController {
                         self.loadingAnimated.stopAnimating()
                         if let items = self.tabBarController?.tabBar.items {
                             items[1].isEnabled = true
-                            self.pickupOutletButton.isEnabled = true
                             self.deliveryOutletButton.isEnabled = true
                             self.deliveryOutletButton.backgroundColor = UIColor(red:0.78, green:0.07, blue:0.00, alpha:1.0)
-                            self.pickupOutletButton.backgroundColor = UIColor(red:0.78, green:0.07, blue:0.00, alpha:1.0)
                         }
                     }
                     
