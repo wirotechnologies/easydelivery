@@ -14,9 +14,17 @@ struct placeCell{
     var time = String()
 }
 
+struct itemCell{
+    var image = String()
+    var name = String()
+    var price = Float()
+    var place = String()
+}
+
 class InitialSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var burgerPlaces = [placeCell]()
+    var burgerItems = [itemCell]()
     
     @IBOutlet weak var selectorOutlet: UISegmentedControl!
     @IBAction func selectorPlaceOrItems(_ sender: UISegmentedControl) {
@@ -48,10 +56,26 @@ class InitialSearchViewController: UIViewController, UITableViewDelegate, UITabl
             placeCell(image: "circle_logo_burger_king", name: "Burger King", time: "10 - 20 min | 0.2 mi away"),
             placeCell(image: "circle_logo_beer_burger", name: "Beer Burger", time: "30 - 40 min | 0.5 mi away")
         ]
+        burgerItems = [
+            itemCell(image: "american_classic_burger", name: "American Classic Burger", price: 7.00, place: "McDonald's"),
+            itemCell(image: "big_latin_burger", name: "Big Latin Burger", price: 6.00, place: "Presto"),
+            itemCell(image: "black_beauty_burger", name: "Black Beauty Burger", price: 8.50, place: "Bacon Burgers"),
+            itemCell(image: "chicken_jack_burger", name: "Chicken Jack Buerger", price: 10.00, place: "Beer Burger"),
+            itemCell(image: "mini_japanese_burger", name: "Mini Japanese Burger", price: 9.99, place: "Delicious Burger"),
+            itemCell(image: "special_burger", name: "Special Burger", price: 8.00, place: "Burger King")
+        ]
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return burgerPlaces.count
+        let indexSegment = selectorOutlet.selectedSegmentIndex
+        switch indexSegment {
+        case 0:
+            return burgerPlaces.count
+        case 1:
+            return burgerItems.count
+        default:
+            return burgerPlaces.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -66,9 +90,9 @@ class InitialSearchViewController: UIViewController, UITableViewDelegate, UITabl
             cell?.setPlaceTime(time: burgerPlaces[indexPath.row].time)
             return cell!
         case 1:
-            cell?.setImage(nameImage: burgerPlaces[indexPath.row].image)
-            cellItem?.setItemName(nameItem: burgerPlaces[indexPath.row].name)
-            cellItem?.setItemTime(time: burgerPlaces[indexPath.row].time)
+            cellItem?.setImage(nameImage: burgerItems[indexPath.row].image)
+            cellItem?.setItemName(nameItem: burgerItems[indexPath.row].name)
+            cellItem?.setItemPrice(price: ("$" + String(burgerItems[indexPath.row].price) + " | " + burgerItems[indexPath.row].place))
             return cellItem!
         default:
             return cell!

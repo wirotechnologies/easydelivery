@@ -29,8 +29,8 @@ class ItemTableViewCell: UITableViewCell {
     func setItemName(nameItem: String){
         itemName.text = nameItem
     }
-    func setItemTime(time: String){
-        itemTime.text = time
+    func setItemPrice(price: String){
+        itemTime.text = price
     }
     
 }
